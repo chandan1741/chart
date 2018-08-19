@@ -10,9 +10,8 @@ while ($row = mysqli_fetch_array($result)){
     'label' => $row['framework'],
     'value' => $row['no_of_like']
   );
-  $data = json_encode($data);
-  //echo $data;die;
 }
+$data = json_encode($data);
 ?>
 <!DOCTYPE html>
 <html>
